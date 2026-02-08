@@ -3,4 +3,5 @@
 
 # テスト
 ## テスト実行
+cd sample
 docker-compose exec java-test mvn test
