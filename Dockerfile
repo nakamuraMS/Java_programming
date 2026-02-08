@@ -6,7 +6,4 @@ WORKDIR /app
 COPY pom.xml .
 RUN mvn -B dependency:go-offline
 
-# ソースは後でコピー（or volume mount）
 COPY . .
-
-CMD ["mvn", "test"]
